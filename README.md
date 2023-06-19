@@ -1,4 +1,4 @@
-# How to Run TensorFlow Lite Models on Windows
+# To Run TensorFlow Lite Models on Windows
 This guide shows how to set up a TensorFlow Lite Runtime environment on a Windows PC. We'll use [Anaconda](https://www.anaconda.com/) to create a Python environment to install the TFLite Runtime in. It's easy!
 
 ## Step 1. Download and Install Anaconda
@@ -25,4 +25,16 @@ Enter "y" when it asks if you want to proceed. Activate the environment and inst
 ```
 conda activate tflite1-env
 pip install tensorflow opencv-python protobuf==3.20.*
+```
+
+# to run detection file 
+
+```
+git clone https://github.com/Trletina/tf_lite_test.git
+```
+
+and to run files do it like this
+
+```
+python TFLite_detection_image.py --modeldir=TFLite_model --image=test_image_01.bmp
 ```
